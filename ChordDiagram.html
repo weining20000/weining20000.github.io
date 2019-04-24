@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+        <link href="css/chorddiagramStyle.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="content" class="clearfix">
+                <aside>
+                    <h2>2017 Merchandise Exports by Region</h2>
+                    <p>This visualization explores the global total merchandise export flow among seven regions in the world in 2017. </p>
+                    <p>The length of the arc represents the total export value of each region. The arcs are ordered in a descending order. As the chord diagram shows, Europe was the largest exporter in 2017, with a total merchandise export value of approximately USD 6.43 trillion. China was the second best performing export region, followed by North America, Middle East, SCA, CIS, and Africa. The graph shows that export performance was uneven across all regions in the world.</p>
+                    <p>Each ribbon represents a distinct export flow from a source region to a target region. The ribbons are ordered by the export value of the source country in a descending order. If the ribbon starts from and ends at the same arc, then it means that the export were exchanged among countries within the same region. For example, approximately 70% of Europe's total merchandise export stayed within Europe. About 53% of Asia's export goes to the other Asian countries. Europe, Asia and North America are less dependent on demands from countries outside of their respective regions. On the countrary, Middle East, SCA, CIS and Africa’s exports are highly dependent on demands from Europe and Asia.</p>                   
+                </aside>
+            </div>
+            <footer>Visualization by Weining Hu. Code adapted from the <a href="https://www.d3-graph-gallery.com/graph/chord_axis_labels.html">D3.js Graph Gallery.</a>
+            </footer>
+        </div>
+        <script type="text/javascript" src="script/chorddiagramScript.js"></script>
+    </body>
+</html>

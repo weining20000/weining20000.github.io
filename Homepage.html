@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <link href="css/introStyle.css" rel="stylesheet" type="text/css">
+    <link href="css/introNormalize.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Winnie Weining Hu</h1>
+            <div id="icon">
+                <a href="https://github.com/weining20000"><img src="images/GitHub.png"></a>
+                <a href="https://www.linkedin.com/in/weining-hu-54547442"><img src="images/LinkedIn.png"></a>
+            </div>
+            <div id="menu">
+                <ul>                    
+                    <li class="active"><a href="Homepage.html" accesskey="1" title="">Project Introduction</a></li>
+                    <li><a href="PieChart.html" accesskey="2" title="">Pie Chart</a></li>
+                    <li><a href="ChordDiagram.html" accesskey="3" title="">Chord Diagram</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="intro">
+            <h2>Project Introduction</h2>
+        </div>
+        <div id="main">
+            <div class="textbox">
+                <a href="https://www.wto.org/english/res_e/statis_e/wts2017_e/wts17_toc_e.htm">
+                    <h3>2017 Global Merchandise Exports</h3>
+                </a>
+                <h4>PROJECT MOTIVATION</h4>
+                <p>This project analyzes the 2017 export data across seven regions in the world. Although export data has been rigorously explored by many visualization designers, many of these graphics were dislayed as a line chart, bar chart, or pie chart. A major problem with these three types of chart is that the graph only presents the export performance for one single region at a time, making it difficult to visually compare the export performances across all regions simultaneously. In order to overcome this shortcoming, this project uses a chord diagram to visualize the exports data for all seven regions in the world, making it possible to display how merchandise products were exported from one source region to a destination.</p>
+                <h4>DATA DESCRIPTION</h4>
+                <p>The data is sourced from the statistical database of the <a href="https://data.wto.org/">World Tade Organization.</a> The regions studied in this project are Africa, Asia, Commonwealth of Independent States (CIS), Europe, Middle East, North America, and South and Central America and the Caribbean (SCA). The time period of the data was 2017. By using Python, the original dataset was processed into a 7X7 matrix as below. All values were recorded in billions of U.S. dollars.</p>
+                <div align="center">
+                    <img src="images/matrix.png" height="210" width="500" align="center">
+                </div> 
+                <h4>KEY FINDINGS</h4>
+                <p>Export performance was uneven across seven regions in the world. In 2017, Europe was the best merchandise exports performaning region, while Africa was the worst performing region. Europe, Asia, and North America are less dependent on demands from outside regions. On the contrary, Africa, CIS, Middle East, and SCA are highly dependent on demands from Europe, Asia and North America.</p> 
+        </div>
+        <div id="copyright">
+            <p>&copy; 2019 Winnie Weining Hu. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-83215708-2', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</html>
